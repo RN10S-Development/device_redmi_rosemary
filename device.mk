@@ -359,6 +359,9 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.nwk_opt@1.0.vendor
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 PRODUCT_PACKAGES += \
     FrameworksResOverlayRosemary \
     GoogleNetworkStackOverlayRosemary \

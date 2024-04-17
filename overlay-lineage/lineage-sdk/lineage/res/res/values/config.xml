@@ -49,4 +49,57 @@
         <item>restart_bootloader</item>
         <item>restart_fastboot</item>
      </string-array>
+
+    <!-- The list of package IDs that are allowed to use aux cameras.
+         NOTE: If this list is empty then all apps will be able to use aux cameras. -->
+    <string-array name="config_cameraAuxPackageAllowList" translatable="false">
+        <!-- Qualcomm Snap -->
+        <item>org.codeaurora.snapcam</item>
+        <!-- AOSP Camera -->
+        <item>com.android.camera</item>
+        <!-- AOSP Camera2 -->
+        <item>com.android.camera2</item>
+        <!-- Google Camera (Original) -->
+        <item>com.google.camera</item>
+        <!-- Google Camera Go -->
+        <item>com.google.android.apps.cameralite</item>
+        <!-- SGCAM (Preferred GCam mod) -->
+        <item>com.shamim.cam</item>
+        <!-- PixelExperience face unlock feature -->
+        <item>org.pixelexperience.faceunlock</item>
+        <!-- LineageOS Aperture -->
+        <item>org.lineageos.aperture</item>
+        <!-- LineageOS Aperture (Debug build) -->
+        <item>org.lineageos.aperture.dev</item>
+    </string-array>
+
+    <!-- The list of package IDs that are not allowed to use aux cameras. -->
+    <string-array name="config_cameraAuxPackageExcludeList" translatable="false">
+        <!-- Telegram -->
+        <item>org.telegram.messenger</item>
+        <!-- OwlGram -->
+        <item>it.owlgram.android</item>
+        <!-- Nekogram -->
+        <item>tw.nekomimi.nekogram</item>
+        <!-- Telegram X -->
+        <item>org.thunderdog.challegram</item>
+        <!-- Plus Messenger -->
+        <item>org.telegram.plus</item>
+        <!-- MdGramYou -->
+        <item>org.telegram.mdgram</item>
+        <!-- BGram -->
+        <item>org.telegram.BifToGram</item>
+        <!-- Graph Messenger -->
+        <item>ir.ilmili.telegraph</item>
+        <!-- Microsoft Teams -->
+        <item>com.microsoft.teams</item>
+        <!-- Discord -->
+        <item>com.discord</item>
+        <!-- Bluecord -->
+        <item>com.bluecord</item>
+        <!-- Aliucord -->
+        <item>com.aliucord</item>
+        <!-- Zoom -->
+        <item>us.zoom.videomeetings</item>
+    </string-array>
 </resources>

@@ -392,6 +392,8 @@
         <item>com.bluecord</item>
         <!-- Aliucord -->
         <item>com.aliucord</item>
+        <!-- Zoom -->
+        <item>us.zoom.videomeetings</item>
     </string-array>
 
     <!-- Enables or disables haptic effect when the text insertion/selection handle is moved

@@ -21,24 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device tree
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Common PE configs
-$(call inherit-product, vendor/pb/config/common_full_phone.mk)
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_USES_AOSP_RECOVERY := true
-
-# Kasumi's GCam GO
-GCGOP_VENDOR_DIR ?= vendor/gcgop
-$(call inherit-product-if-exists, $(GCGOP_VENDOR_DIR)/config.mk)
+# Common LineageOS configs
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_NAME := aosp_rosemary
+PRODUCT_NAME := lineage_rosemary
 PRODUCT_DEVICE := rosemary
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi

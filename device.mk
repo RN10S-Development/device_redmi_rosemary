@@ -368,9 +368,6 @@ PRODUCT_PACKAGES += \
     TetheringOverlayRosemary \
     WifiOverlayRosemary
 
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay-pb
-
 # Overridden props
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 include $(DEVICE_PATH)/props/overrides.mk

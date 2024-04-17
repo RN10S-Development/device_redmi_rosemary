@@ -1,0 +1,38 @@
+[
+  {
+    "repository": "RN10S-Development/kernel_redmi_rosemary",
+    "target_path": "kernel/redmi/rosemary"
+  },
+  {
+    "repository": "RN10S-Development/vendor_redmi_rosemary",
+    "target_path": "vendor/redmi/rosemary"
+  },
+  {
+    "repository": "RN10S-Development/vendor_mediatek_opensource",
+    "target_path": "vendor/mediatek/opensource",
+    "branch": "13"
+  },
+  {
+    "repository": "RN10S-Development/vendor_mediatek_interfaces",
+    "target_path": "vendor/mediatek/interfaces",
+    "branch": "thirteen"
+  },
+  {
+    "repository": "RN10S-Development/device_mediatek_common",
+    "target_path": "device/mediatek/common",
+    "branch": "13"
+  },
+  {
+    "repository": "RN10S-Development/device_mediatek_sepolicy_vndr",
+    "target_path": "device/mediatek/sepolicy_vndr"
+  },
+  {
+    "repository": "RN10S-Development/hardware_mediatek",
+    "target_path": "hardware/mediatek",
+    "branch": "pb_alpha"
+  },
+  {
+    "repository": "LineageOS/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
+  }
+]

@@ -61,7 +61,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio.service.mediatek \
     android.hardware.audio@6.0-impl \
-    android.hardware.audio@6.0-impl-mediatek \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio@5.0.vendor \
     android.hardware.audio@7.0.vendor \
@@ -184,8 +183,6 @@ PRODUCT_PACKAGES += \
 # DRM, but bad
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
-    libclearkeycasplugin.vendor \
-    libdrmclearkeyplugin.vendor \
     libmockdrmcryptoplugin
 
 # Display
@@ -256,7 +253,6 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
-    ImsServiceBase \
     PresencePolling \
     RcsService \
     vendor.mediatek.hardware.videotelephony@1.0.vendor \
@@ -305,7 +301,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-service.vendor \
     libmedia_codeclist \
     libstagefright_codecbase \
     libstagefright_bufferpool@2.0.1 \
@@ -342,11 +337,6 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.1.vendor \
     android.hardware.neuralnetworks@1.0.vendor \
     libtextclassifier_hash.vendor
-
-# NGA
-PRODUCT_PACKAGES += \
-    NgaResources \
-    nga
 
 # NVRAM
 PRODUCT_PACKAGES += \
@@ -445,7 +435,6 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor \
     android.hardware.power-service-mediatek \
     android.hardware.power-V1-ndk_platform.vendor \
-    vendor.mediatek.hardware.power@1.0.vendor \
     vendor.mediatek.hardware.power@1.1.vendor \
     vendor.mediatek.hardware.power@2.0.vendor \
     vendor.mediatek.hardware.mtkpower@1.0.vendor \
@@ -535,11 +524,6 @@ PRODUCT_TARGET_VNDK_VERSION := 32
 
 PRODUCT_PACKAGES += \
     libui-v32
-
-# VNDService
-PRODUCT_PACKAGES += \
-    vndservice_manager \
-    vndservice_manager.vendor
 
 # Vibrator
 PRODUCT_PACKAGES += \
